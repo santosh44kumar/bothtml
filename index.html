@@ -33,6 +33,12 @@
     </div>
   </div>
 
+<style>
+
+        .rw-conversation-container .rw-header{background-color: #0000FF;}
+        .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #0080FF;}
+        .rw-launcher{background-color: #0000FF;}
+ </style>
 
   <script>!(function () {
   let e = document.createElement("script"),
@@ -44,11 +50,12 @@
     (e.onload = () => {
       window.WebChat.default(
         {
+          initPayload: "/greet",
           customData: { language: "en" },
           socketUrl: "http://34.93.72.191",
-	  socketPath: "/socket.io/",
-          title: "Title",
-          subtitle: "Subtitle",
+	      socketPath: "/socket.io/",
+          title: "Project1234_Bot",
+          subtitle: "Welcome!",
           params: {"storage": "session"} 
           // add other props here
         },
