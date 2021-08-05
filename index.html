@@ -49,12 +49,13 @@
     (e.onload = () => {
       window.WebChat.default(
         {
-          initPayload: "/greet",
+          <!-- initPayload: "/greet", -->
+          initPayload: "Hi! Welcome to Account1234",
           customData: { language: "en" },
           socketUrl: "http://34.93.72.191",
 	      socketPath: "/socket.io/",
-          title: "Project1234_Bot",
-          subtitle: "Welcome!!!!!",
+          title: "Account1234_ExpertBot",
+          <!-- subtitle: "Welcome!", -->
           params: {"storage": "session"} 
           // add other props here
         },
